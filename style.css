@@ -1,0 +1,168 @@
+/* custom properties: colors */
+:root {
+    --primary: rgb(0, 80, 229);
+    --secondary: rgb(88, 242, 101);
+    --shadow: #c7c7c7;
+    --dark: #010101;
+    --light: #fefff5;
+}
+
+/* fonts */
+/* @font-face {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'TrebuchetMS';
+    src: url('fonts/TrebuchetMS.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('fonts/websymbols-regular-webfont.eot');
+    src: url('fonts/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/websymbols-regular-webfont.woff') format('woff'),
+    url('fonts/websymbols-regular-webfont.ttf') format('truetype'),
+    url('fonts/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+/* generales */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url('img/random-square-halftone-pattern/1062.jpg');
+}
+
+.wrap {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+.gear, .icon {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* header */
+#header {
+    width: 100%;
+    height: 70px;
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#logo {
+    float: left;
+    width: 200px;
+    background-color: var(--primary);
+    text-align: center;
+    margin-top: 8px;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 300ms;
+}
+#logo .gear {
+    display: block;
+    float: left;
+    font-size: 30px;
+    margin-top: 8px;
+    margin-left: 26px;
+}
+#logo h3 {
+    display: block;
+    float: right;
+    font-size: 40px;
+    margin-top: 5px;
+    margin-right: 65px;
+    transition: all 300ms;
+}
+
+#menu {
+    float: right;
+    height: 70px;
+    background: transparent;
+}
+#menu ul li {
+    font-size: 24px;
+    display: inline-block;
+    margin: 0 20px;
+    letter-spacing: 1px;
+    line-height: 70px;
+}
+#menu ul li a  {
+    display: block;
+    color: var(--light);
+    text-decoration: none;
+    transition: all 200ms;
+}
+#menu ul li a:hover  {
+    color: var(--secondary);
+    transform: scale(1.2, 1.2);
+}
+
+/* banner */
+#banner {
+    width: 95.6%;
+    height: 100px;
+    border: 10px solid var(--light);
+    box-shadow: 0 0 2px var(--shadow);
+    background-color: var(--secondary);
+    background-position: -200px -200px;
+    margin: 20px auto;
+}
+#banner h1 {
+    display: block;
+    width: 850px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--light);
+    font-size: 45px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 1px var(--shadow);
+    margin: 27px auto;
+}
+
+/* cards */
+.card {
+    float: left;
+    width: 205px;
+    height: 305px;
+    border: 1px solid var(--shadow);
+    box-shadow: 1px 1px 2px var(--shadow);
+    background-color: var(--light);
+    overflow: hidden;
+    margin: 22px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.card:last-child {
+    margin-right: 0;
+}
+.card .icon {
+    display: block;
+    width: 100%;
+    height: 130px;
+    font-size: 50px;
+    line-height: 110px;
+    text-align: center;
+    margin: 0 auto;
+}
+.card .category {
+    width: 100%;
+    height: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--primary);
+}
+.card .description {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: var(--primary);
+    font-size: 15px ;
+}
